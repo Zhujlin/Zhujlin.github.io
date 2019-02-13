@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-style: normal;
+}
+html,
+body {
+    min-height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    color: #333;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    position: relative;
+    background: #fff; 
+    font-weight: normal; 
+    color: #333333;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+    display: inline;
+}
+i{
+    /* 小三角 */
+    display:inline-block;
+    width:0;
+    height:0;
+    border-top:5px solid #333;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-bottom:0;
+}
+img{
+    width: 100%;
+    background-size: 100%
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}   
+.all {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+}
+a{
+    /* 去掉a的默认样式 */
+    text-decoration:none; 
+    color:#333; 
+}

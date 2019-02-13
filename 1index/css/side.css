@@ -1,0 +1,148 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-style:normal;
+}
+html,body {
+    min-height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    color: #333;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+li {
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    background-size: 100%
+} */
+
+/* 开始 */
+
+/* .all{
+    width: 100%;
+    height: 1000px;
+    border: 1px solid red;
+    position: relative;
+} */
+
+
+#side{
+    /* display: none; */
+    opacity: 1;
+    transition: all 1s ease;
+    width: 3.9rem;
+    height: 20rem;
+    position:fixed;
+    z-index: 1000;
+    right: 0.65rem;
+    /* 到顶部的距离 */
+    top: 13.4rem;
+}
+#side ul{
+     /* flex布局 */
+     display: flex;
+     justify-content: space-evenly;
+     flex-flow: column;
+}
+#side li{
+    margin-bottom: 1px;
+}
+#side .side-img{
+    width: 100%;
+    height: 100%;
+    background: #7AD0AE;
+    text-align: center;
+}
+#side img{
+    width: 3.5625rem;
+    height: 3.25rem;
+    margin-top: 2px;
+}
+#side .side-img2{
+    width: 4rem;
+    height: 3.63rem;
+    z-index: 1;
+    position: absolute;
+    opacity: 1;
+    background: #7ad0ae;
+    font-size: 1.2rem;
+    font-weight: 540;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    overflow: hidden;
+    margin-right: 3.9rem;   
+}
+#side .side-img2 img{
+    display: inline-block;
+    width: 3.5625rem;
+    height: 3.25rem;
+    margin:3px 0 3px 3px;
+}
+.side-span{
+    display: inline-block;
+    height: 3.63rem;
+    width: 10.5rem;
+    line-height: 3.63rem;
+    position: relative;
+}
+#side .side-img2 span{
+    position: absolute;
+    color: #fff;
+    margin-left: 1.6rem;
+}
+
+#side .side-img2-1{
+    top: 0;
+    right: 1px;
+    transition: all 0.2s ease;
+}
+#side .side-img2-1{
+    opacity: 0;
+}
+#side .side-img-1:hover .side-img2-1{
+    opacity: 1;
+    width: 14.8rem;
+}
+
+#side .side-img2-2{
+    top: 3.64rem;
+    right: 1px;
+    transition: all 0.2s ease;
+}
+#side .side-img2-2{
+    opacity: 0;
+}
+#side .side-img-2:hover .side-img2-2{
+    opacity: 1;
+    width: 14.8rem;
+}
+
+#side .side-img2-3{
+    top: 7.35rem;
+    right: 1px;
+    transition: all 0.2s ease;
+}
+#side .side-img2-3{
+    opacity: 0;
+}
+#side .side-img-3:hover .side-img2-3{
+    opacity: 1;
+    width: 14.8rem;
+}
+
+#side .side-img2-4{
+    top: 11.05rem;
+    right: 1px;
+    transition: all 0.2s ease;
+}
+#side .side-img2-4{
+    opacity: 0;
+}
+#side .side-img-4:hover .side-img2-4{
+    opacity: 1;
+    width: 14.8rem;
+}

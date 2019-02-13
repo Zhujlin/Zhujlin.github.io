@@ -1,0 +1,24 @@
+/* 城市 S */
+.city>ul{
+    margin-bottom: 3.5rem;
+    /*grid 布局*/
+   display: grid;
+   /* 列数 */
+   grid-template-columns: repeat(6, 1fr);
+   /* 几个值就代表几行 */
+   grid-template-rows: 9rem 9rem;
+    /* 网格项之间添加一个间隙 */
+   grid-gap: 5px;
+   grid-template-areas:
+        "h h h h h h"
+        "h h h h h h";
+}
+.city>ul>li{
+    transition: all 0.5s ease;
+}
+.city>ul>li:hover{
+    transition: all 0.5s ease;
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+/* 城市 E */

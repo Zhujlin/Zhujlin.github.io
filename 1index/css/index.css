@@ -1,0 +1,341 @@
+/* 头部背景轮播 S */
+.head-bg {
+    width: 100%;
+    height: 26.598rem;
+
+    overflow: hidden;
+}
+.head-bg>ul{
+    position: relative;
+    width: 100%;
+}
+/* 暂停动画 */
+/* .head-bg>ul:hover{
+    animation-play-state: paused;
+} */
+/* .head-bg-1:hover{
+    animation-play-state: paused;
+}
+.head-bg-2:hover{
+    animation-play-state: paused;
+} */
+
+.head-bg > ul > li {
+    position: absolute;
+    width: 100% ;
+    float: left;
+}
+.head-bg img{
+    width: 100%;
+}
+.head-bg-1{
+    /* z-index: 2; */
+    animation: imgMove 10s linear infinite;
+}
+.head-bg-2{
+    /* z-index: 1; */
+    animation: imgMove2 10s linear infinite;
+}
+@keyframes imgMove {
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+}
+@keyframes imgMove2 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+}
+/* 头部背景轮播 E */
+/* 选框-2 E */
+/* 头部 E */
+
+
+
+
+/*  内容部分 S */
+.main{
+    width: 100%;
+    padding: 0 5rem;
+    background: #ffffff;
+}
+
+/*  内容部分-1 S */
+.box1{
+    width: 100%;
+    height: 8.8rem;
+    padding: 2.5rem 0 ;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #7ad0ae;
+    letter-spacing: 0.1rem;
+    background: #fff;
+}
+.box1 h3{
+    margin-top: 0.2rem;
+    color: #999999;
+}
+/*  内容部分-1 E  */
+
+/*  内容部分-3 S  */
+.box3{
+    width: 100%;
+    /* height: 29rem; */
+    /* flex布局 */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.78rem;
+    line-height: 2rem;
+    color: #7ad0ae;
+}
+.box3 .box3-1{
+    display: inline-block;
+    width: 24%;
+    height: 100%;
+    padding: 0.2rem 0.2rem;
+}
+.box3 .box3-1 .box3-1-img{
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+}
+.box3 .box3-1 .box3-1-img img{
+    transition: all 0.8s ease;
+}
+.box3 h2{
+    color: black;
+}
+.box3 h3{
+   font-size: 1.2rem;
+}
+.box3 h4{
+    color: #999999;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+.box3 .tiao{
+    width: 0px;
+    height: 4px;
+    background: #7AD0AE;
+    margin-top: 0.87rem; 
+    transition: all 0.8s ease;
+}
+.box3-1:hover img{
+    transition: all 0.8s ease;
+    transform: scale(1.1);
+}
+.box3-1:hover .tiao{
+    transition: all 0.8s ease;
+    width: 100%
+} 
+.box3-1:hover{
+    transition: 0.5s ;
+    box-shadow: 0px 0px 2px 2px #999
+}
+/*  内容部分-3 E  */
+
+/* 选项卡 S */
+.tab{
+    width: 100%;
+    height: 5rem;
+    padding: 1.25rem;
+    text-align: center;
+    overflow: hidden;
+}
+.tab ul{
+    height: 2.5rem;   
+}
+.tab ul li{
+    display: inline-block;
+    height: 2.5rem;
+    width: 5.4rem;
+    line-height: 2.4rem;
+    margin: 0 1.8rem;
+    color: #808080;
+    font-size: 1.1rem;
+    font-weight: 600
+}
+.tab ul li:hover{
+    background-color: #7ad0ae;
+    color:#fff
+}
+.tab-index{
+    width: 100%;
+    /* height: 44rem; */
+}
+.tab-index>ul{
+    /* flex布局 */
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    overflow: hidden;
+}
+.tab-index>ul>li{
+    width: 24.19%;
+    height: 22rem;
+    margin: 0 0.3rem;
+    border: 1px solid #F8F8F8;
+    margin-bottom: 0.6rem;
+}
+.tab-img{
+    height: 17rem;
+    width: 100%;
+    overflow: hidden;
+}
+.tab-index h5{
+    height: 2.3rem;
+    line-height: 2.3rem;
+    padding: 0 0.5em;
+    /* text-indent: 0.5em; */
+}
+.tab-index .name,.price{
+    display: inline-block;
+    width: 37%;
+}
+.tab-index .price{
+    color: #7AD0AE;
+}
+.tab-index .tab-right{
+    width: 62%;
+    float: right;
+    color: #999999;
+    text-align: right;
+}
+.tab-img img{
+    transition: all 0.8s ease;
+}
+.tab-img:hover img{
+    transition: all 0.8s ease;
+    transform: scale(1.1);
+}
+/* 选项卡 E */
+
+/* 内容部分-6 -客户案例- S */
+.tab-index3{
+    width: 100%;
+    height: 22rem;
+    overflow: hidden;
+}
+.tab-index3>ul{
+    /* flex布局 */
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    overflow: hidden;
+}
+.tab-index3>ul>li{
+    width: 23.9%;
+    height: 22rem;
+    margin: 0 0.4rem;
+    border: 1px solid #F8F8F8
+}
+.tab-img3{
+    height: 22rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.tab-img3>.tab-text3{
+    width: 100%;
+    height: 11rem;
+    position: absolute;
+    top: 19.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    height: 50%;
+    text-align: center;
+    transition: all 0.8s ease;
+    padding: 0 0.5rem 0 0.5rem;
+}
+.tab-img3>.tab-text3>h2{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+.tab-img3>.tab-text3>h2:hover{
+    color: #7AD0AE;
+    /* 鼠标移上变小手 */
+    cursor:pointer;  
+}
+.tab-img3>.tab-text3>h4{
+    font-size: 0.7rem;
+    text-align: left;
+    margin-top: 1rem;
+    /* 多行文字+省略号 */
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.tab-img3:hover .tab-text3{
+    transition: all 0.8s ease;
+    top: 12.5rem;
+}
+/* 内容部分-6 -客户案例- E */
+
+/* 新闻中心 S */
+.news{
+    width: 100%;
+}
+.news>ul{
+    /*grid 布局*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 16.5rem 16.5rem;
+     /* 网格项之间添加一个间隙 */
+    grid-gap: 10px;
+    grid-template-areas:
+            "h h"
+            "h h";
+}
+.news>ul>li{
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem 0.4rem 0.8rem 0.4rem;
+}
+.news>ul>li>.news-1{
+    float: left;
+    display: inline-block;
+    width: 36%;
+    height: 100%;
+}
+.news-text{
+    width: 59.5%;
+    height: 100%;
+    float: right;
+    display: inline-block;
+    padding: 0.8rem;
+    text-align: left;
+}
+.news-text h5{
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.news-text>h5:hover .news-a{
+    color: #7AD0AE;
+}
+.news-text .news-text-p{
+    font-size: 0.85rem;
+    margin: 1.5rem 0;
+}
+.news-text .news-time{
+    font-size: 0.6rem;
+    color: #999999;
+}
+.news>ul>li:hover{
+    transition: 0.5s ;
+    box-shadow: 0px 0px 2px 2px #999;
+    margin-top: -0.3rem;
+    margin-bottom: -0.3rem;
+}
+/* 新闻中心 E */
+
+/*  内容部分 E */
