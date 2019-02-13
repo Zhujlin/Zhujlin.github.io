@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>鲜花租赁</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/flowerRental.css">
+    <link rel="stylesheet" href="./css/city.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/side.css" />
+</head>
+
+<body>
+    <div class="all">
+        <!-- 头部菜单 S-->
+        <header data-am-widget="header" class="header">
+            <!--顶部工具栏 S-->
+            <div class="header-1">
+                <div class="header-1-left">泰笛绿植-互联网绿植租赁品牌！</div>
+                <div class="header-1-right">
+                    <img class="icon_phone" src="./images/icon_phone.png">
+                    <a class="icon_phone_number" href="../1首页/index.html">4008-123-923</a>
+                </div>
+            </div>
+            <!--顶部工具栏 E-->
+
+            <!-- 头部导航栏 S-->
+            <div class="header-2">
+                <!-- 右侧logo S -->
+                <a><img class="logo" src="./images/logo.png" alt=""></a>
+                <!-- 右侧logo E -->
+                <!-- 切换到移动端的导航按钮 S -->
+                <!-- <button class="" data-am-collapse="{target: '#doc-topbar-collapse'}"> -->
+                <!-- <span class="">导航切换</span> -->
+                <!-- <span class=""></span> -->
+                <!-- </button> -->
+                <!-- 切换到移动端的导航按钮 E -->
+                <!-- 右侧菜单栏 S -->
+                <div class="header-menu">
+                    <ul class="header-menu-1">
+                        <li>
+                            <a class="a" href="../1首页/index.html">首页</a>
+                        </li>
+                        <li>
+                            <a class="a" id="speciesOfFlowers">绿植种类<i></i></a>
+                            <ul class="down-menu-1-1" id="downMenu11">
+                                <li>
+                                    <a href="../2绿植种类/speciesOfFlowers.html">大型绿植</a>
+                                </li>
+                                <li>
+                                    <a href="../2绿植种类/speciesOfFlowers.html">中型绿植</a>
+                                </li>
+                                <li>
+                                    <a href="../2绿植种类/speciesOfFlowers.html">小型绿植</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="a" id="flowerRental">绿植租赁<i></i></a>
+                            <ul class="down-menu-1-2" id="downMenu12">
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">北京</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">上海</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">南京</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">合肥</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">苏州</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">深圳</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">广州</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">杭州</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">武汉</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">成都</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">大连</a>
+                                </li>
+                                <li>
+                                    <a href="../3绿植租赁/flowerRental.html">无锡</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="a" href="../4鲜花商务/flowerBusiness.html">鲜花商务</a></li>
+                        <li><a class="a" href="../5关于泰笛/about.html">关于泰笛</a></li>
+                        <li><a class="a" href="../6新闻中心/news.html">新闻中心</a></li>
+                        <li><a class="a" href="../1首页/index.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <!-- 右侧菜单栏 E -->
+            </div>
+            <!--头部导航栏 E -->
+        </header>
+        <div class="box0"></div>
+        <!-- 头部菜单 E -->
+
+        <!-- 报价框 S -->
+        <div class="quote">
+            <div class="quote-1">
+                <p>免费领取--</p>
+                <p>绿植报价清单及租摆方案</p>
+            </div>
+            <fieldset>
+                <form id="customer_add">
+                    <div>
+                        <input type="text" placeholder="名字" id="user_name" name="name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="电话" id="user_phone" name="telphone">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="面积(m²)" id="user_size" name="size" class="input_size">
+                        <div>
+                            <select class="bg-tc" id="user_city" name="city_id">
+                                <option value="1">北京</option>
+                                <option value="2" selected="">上海</option>
+                                <option value="3">南京</option>
+                                <option value="4">合肥</option>
+                                <option value="9">苏州</option>
+                                <option value="13">深圳</option>
+                                <option value="14">广州</option>
+                                <option value="15">杭州</option>
+                                <option value="16">武汉</option>
+                                <option value="17">成都</option>
+                                <option value="18">大连</option>
+                                <option value="19">无锡</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <button class="am-btn" type="radio">点击领取</button>
+            </fieldset>
+
+        </div>
+        <!-- 报价框 E -->
+
+        <!-- 头部背景 S-->
+        <div class="head-bg">
+            <img class='head-bg-1' src="./images/flowerRental-banner.jpg" alt=""></li>
+        </div>
+        <!-- 头部背景 E-->
+
+
+
+        <!-- 内容部分 S -->
+        <div class="main">
+            <!-- 内容部分-1 S -->
+            <div class="box1">
+                <h1>泰笛绿植</h1>
+                <h3>— — 泰笛绿植租摆场景 — —</h3>
+            </div>
+            <!-- 内容部分-1 E -->
+            <!-- 内容部分-2 S -->
+            <div class="box2">
+                <div class="box2-1">
+                    <div class="box2-1-img">
+                        <img src="./images/flower1-1.jpg" alt="">
+                    </div>
+                    <h2>大型绿植</h2>
+                    <h3></h3>
+                    <h4>【枝繁叶茂】适合摆放在大厅、会议室</h4>
+                    <div class="tiao"></div>
+                </div>
+                <div class="box2-1">
+                    <div class="box2-1-img">
+                        <img src="./images/flower1-2.jpg" alt="">
+                    </div>
+                    <h2>中型绿植</h2>
+                    <h3></h3>
+                    <h4>【别具匠心】适合摆放在前台、办公室</h4>
+                    <div class="tiao"></div>
+                </div>
+                <div class="box2-1">
+                    <div class="box2-1-img">
+                        <img src="./images/flower1-3.png" alt="">
+                    </div>
+                    <h2>小型绿植</h2>
+                    <h3></h3>
+                    <h4>【玲珑小巧】适合摆放在办公桌、会议桌</h4>
+                    <div class="tiao"></div>
+                </div>
+            </div>
+            <!-- 内容部分-2 E -->
+            <!-- 内容部分-1 S -->
+            <div class="box1">
+                <h1>泰笛优势</h1>
+                <h3>— — 泰笛绿植租赁优势 — —</h3>
+            </div>
+            <!-- 内容部分-1 E -->
+            <!-- 内容部分-3 S -->
+            <div class="box3">
+                <div class="box3-1">
+                    <div class="box3-1-img">
+                        <img src="./images/box2-1.png" alt="">
+                    </div>
+                    <h2>自有绿植基地</h2>
+                    <h3></h3>
+                    <h4>保障绿植的新鲜度</h4>
+                    <div class="tiao"></div>
+                </div>
+                <div class="box3-1">
+                    <div class="box3-1-img">
+                        <img src="./images/box2-2.png" alt="">
+                    </div>
+                    <h2>免费送货上门</h2>
+                    <h3></h3>
+                    <h4>免费送货上门摆放</h4>
+                    <div class="tiao"></div>
+                </div>
+                <div class="box3-1">
+                    <div class="box3-1-img">
+                        <img src="./images/box2-3.png" alt="">
+                    </div>
+                    <h2>免费养护服务</h2>
+                    <h3></h3>
+                    <h4>每周1次定时养护</h4>
+                    <div class="tiao"></div>
+                </div>
+                <div class="box3-1">
+                    <div class="box3-1-img">
+                        <img src="./images/box2-4.jpg" alt="">
+                    </div>
+                    <h2>绿植免费更换</h2>
+                    <h3></h3>
+                    <h4>免费更换坏死绿植</h4>
+                    <div class="tiao"></div>
+                </div>
+            </div>
+            <!-- 内容部分-3 E -->
+            <!-- 内容部分-1 S -->
+            <div class="box1">
+                <h1>绿植作用</h1>
+                <h3>— — 泰笛绿植租赁作用 — —</h3>
+            </div>
+            <!-- 内容部分-1 E -->
+            <!-- 内容部分-4 S -->
+            <div class="box4">
+                <div class="box4-1">
+                    <div class="box4-1-img">
+                        <img src="./images/floor3_img01.png" alt="">
+                    </div>
+                    <h2>美化办公环境，提升企业形象</h2>
+                    <h3></h3>
+                    <h4>绿树成荫，提升企业的整体形象</h4>
+                    <div class="tiao"></div>
+                </div>
+                <div class="box4-1">
+                    <div class="box4-1-img">
+                        <img src="./images/floor3_img02.png" alt="">
+                    </div>
+                    <h2>净化办公空气，提升办公效率</h2>
+                    <h3></h3>
+                    <h4>空气清新，员工工作效率极大提升</h4>
+                    <div class="tiao"></div>
+                </div>
+                <div class="box4-1">
+                    <div class="box4-1-img">
+                        <img src="./images/floor3_img03.png" alt="">
+                    </div>
+                    <h2>除甲醛防辐射，保障员工健康</h2>
+                    <h3></h3>
+                    <h4>除醛防辐，保障员工的身体健康</h4>
+                    <div class="tiao"></div>
+                </div>
+            </div>
+            <!-- 内容部分-4 E -->
+            <!-- 内容部分-1 S -->
+            <div class="box1">
+                <h1>绿植种类</h1>
+                <h3>— — 泰笛绿植租赁种类 — —</h3>
+            </div>
+            <!-- 内容部分-1 E -->
+            <!-- 选项卡 S -->
+            <div class="tab">
+                <ul>
+                    <li>大型绿植</li>
+                    <li>中型绿植</li>
+                    <li>小型绿植</li>
+                </ul>
+            </div>
+            <div class="tab-index">
+                <ul>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-1.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 巴西木 </h5>
+                                <h5 class="tab-right"> 净化空气 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：160cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-2.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 大绿萝 </h5>
+                                <h5 class="tab-right"> 净化空气 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：170cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-3.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 幸福树 </h5>
+                                <h5 class="tab-right"> 吸收甲醛 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：190cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-4.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 富贵竹笼 </h5>
+                                <h5 class="tab-right"> 增加湿度 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：190cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-5.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 心叶藤 </h5>
+                                <h5 class="tab-right"> 净化空气 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：190cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-6.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 发财树 </h5>
+                                <h5 class="tab-right"> 净化空气 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：190cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-7.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 琴叶榕 </h5>
+                                <h5 class="tab-right"> 祛风除湿 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：170cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tab-img">
+                            <img src="./images/flower4-8.jpg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <h5 class="name"> 龙血树 </h5>
+                                <h5 class="tab-right"> 增加湿度 </h5>
+                            </li>
+                            <li>
+                                <h5 class="price"> 49.00/月 </h5>
+                                <h5 class="tab-right"> 高：180cm </h5>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 选项卡 E -->
+
+            <!-- 内容部分-ask S -->
+            <div class="ask">
+                <div class="ask1">查看更多<div id="ask-2"></div>
+                </div>
+            </div>
+            <!-- 内容部分-ask E -->
+
+            <!-- 内容部分-1 S -->
+            <div class="box1">
+                <h1>租赁流程</h1>
+                <h3>— — 泰笛绿植租赁流程 — —</h3>
+            </div>
+            <!-- 内容部分-1 E -->
+
+            <!-- 内容部分-5 S -->
+            <div class="box5">
+                <ul>
+                    <li>
+                        <div class="box5-1">
+                            <div class="box5-img">
+                                <img src="./images/floor5_img01.png" alt="">
+                            </div>
+                            <div class="box5-text">
+                                <h2>[1]方案设计</h2>
+                                <h4>上门了解客户户型信息，免费设计绿植租摆方案</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box5-1">
+                            <div class="box5-img">
+                                <img src="./images/floor5_img02.png" alt="">
+                            </div>
+                            <div class="box5-text">
+                                <h2>[2]植物配置</h2>
+                                <h4>客户查看租摆方案，并对方案中的绿植自由配置</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box5-1">
+                            <div class="box5-img">
+                                <img src="./images/floor5_img03.jpg" alt="">
+                            </div>
+                            <div class="box5-text">
+                                <h2>[3]签订合同</h2>
+                                <h4>客户确定租摆方案，签订泰笛北京绿植租赁合同</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box5-1">
+                            <div class="box5-img">
+                                <img src="./images/floor5_img04.jpg" alt="">
+                            </div>
+                            <div class="box5-text">
+                                <h2>[4]送货上门</h2>
+                                <h4>包装好的绿植从北京基地运输到办公室，进行摆放</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box5-1">
+                            <div class="box5-img">
+                                <img src="./images/floor5_img05.jpg" alt="">
+                            </div>
+                            <div class="box5-text">
+                                <h2>[5]绿植养护</h2>
+                                <h4>每周安排专业人员进行上门养护，及时更换绿植</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 内容部分-5 E -->
+            <!-- 内容部分-1 S -->
+            <div class="box1">
+                <h1>客户案例</h1>
+                <h3>— — 泰笛绿植客户案例 — —</h3>
+            </div>
+            <!-- 内容部分-1 E -->
+            <!-- 内容部分-6 -客户案例- S -->
+            <div class="tab-index3">
+                <ul>
+                    <li>
+                        <div class="tab-img3">
+                            <!-- <div class="tab-img3" style="background:url(./images/floor4_img01.png) content-box"></div> -->
+                            <img src="./images/index6-1.jpg" alt="">
+                            <div class="tab-text3">
+                                <h2>中信银行</h2>
+                                <h4>泰笛与北京中信银行建立绿植租摆业务合作，负责中信银行北京绿植定时养护、绿植更换等服务！</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab-img3">
+                            <img src="./images/index6-2.jpg" alt="">
+                            <div class="tab-text3">
+                                <h2>中国农业银行</h2>
+                                <h4>泰笛与中国农业银行建立绿植租摆业务合作，负责中国农业银行北京绿植定时养护、绿植更换等服务！</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab-img3">
+                            <img src="./images/index6-3.jpg" alt="">
+                            <div class="tab-text3">
+                                <h2>新加坡环球教育集团</h2>
+                                <h4>泰笛与新加坡环球教育集团建立绿植租摆业务合作，负责环球教育集团北京绿植定时养护、绿植更换等服务！</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tab-img3">
+                            <img src="./images/index6-4.jpg" alt="">
+                            <div class="tab-text3">
+                                <h2>来广营国创产业园</h2>
+                                <h4>泰笛与北京来广营国创产业园建立绿植租摆业务合作，负责广营国创产业园北京绿植定时养护、绿植更换等服务！</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 内容部分-6 -客户案例- E -->
+            <!-- 内容部分-ask S -->
+            <div class="ask">
+                <div class="ask1">查看更多<div id="ask-2"></div>
+                </div>
+            </div>
+            <!-- 内容部分-ask E -->
+
+            <!-- 内容部分-1 S -->
+            <div class="box1">
+                <h1>城市分布</h1>
+                <h3>— — 现已开通12大城市 — —</h3>
+            </div>
+            <!-- 内容部分-1 E -->
+
+            <!-- 城市分布 S -->
+            <div class="city">
+                <ul>
+                    <li><img src="./images/city1.png" alt=""></li>
+                    <li><img src="./images/city2.png" alt=""></li>
+                    <li><img src="./images/city3.png" alt=""></li>
+                    <li><img src="./images/city4.png" alt=""></li>
+                    <li><img src="./images/city5.png" alt=""></li>
+                    <li><img src="./images/city6.png" alt=""></li>
+                    <li><img src="./images/city7.png" alt=""></li>
+                    <li><img src="./images/city8.png" alt=""></li>
+                    <li><img src="./images/city9.png" alt=""></li>
+                    <li><img src="./images/city10.png" alt=""></li>
+                    <li><img src="./images/city11.png" alt=""></li>
+                    <li><img src="./images/city12.png" alt=""></li>
+                </ul>
+            </div>
+            <!-- 城市分布 E -->
+
+        </div>
+        <!-- 内容部分 E -->
+
+        <!-- 底部 S -->
+        <div class="footer">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">绿植种类</a></li>
+                <li><a href="">商务鲜花</a></li>
+                <li><a href="">关于泰笛</a></li>
+                <li><a href="">新闻中心</a></li>
+            </ul>
+            <div>
+                <p>Copyright © 2012-2018 24tidy.com Incorporated.</p>
+                <p>泰笛（上海）网络科技股份有限公司</p>
+                <p>备案号:沪ICP备06010950号-3</p>
+            </div>
+        </div>
+        <!-- 底部 E -->
+    </div>
+    <!-- 悬浮框，并且规定什么情况出现，还有返回顶部 等等效果 S -->
+    <div id="side">
+        <ul>
+            <li class="side-img-1">
+                <div class="side-img"><a href="javaScript:;"><img src="./images/side_icon01.png" alt=""></a></div>
+                <div class="side-img2-1 side-img2">
+                    <img src="./images/sidein_icon01.png" alt="">
+                    <div class="side-span"><span>获取报价清单</span></div>
+                </div>
+            </li>
+            <li class="side-img-2">
+                <div class="side-img"><a href="javaScript:;"><img src="./images/side_icon02.png" alt=""></a></div>
+                <div class="side-img2-2 side-img2">
+                    <img src="./images/sidein_icon02.png" alt="">
+                    <div class="side-span"><span>获取摆放方案</span></div>
+                </div>
+            </li>
+            <li class="side-img-3">
+                <div class="side-img"><a href="javaScript:;"><img src="./images/side_icon03.png" alt=""></a></div>
+                <div class="side-img2-3 side-img2">
+                    <img src="./images/sidein_icon03.png" alt="">
+                    <div class="side-span"><span>4008-123-923</span></div>
+                </div>
+            </li>
+            <li class="side-img-4">
+                <div class="side-img"><a href="javaScript:;"><img src="./images/side_icon04.png" alt=""></a></div>
+                <div class="side-img2-4 side-img2">
+                    <img src="./images/sidein_icon04.png" alt="">
+                    <div class="side-span"><span>查看最新活动</span></div>
+                </div>
+            </li>
+            <li>
+                <div class="side-img goTop"><a href="javaScript:;"><img src="./images/side_icon05.png" alt=""></a></div>
+            </li>
+        </ul>
+    </div>
+    <!-- 悬浮框 E -->
+    <script src="./js/header.js"></script>
+    <script src="./js/side.js"></script>
+</body>
+
+</html>
